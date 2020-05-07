@@ -175,7 +175,7 @@ class PHPExcel_Reader_Excel2003XML extends PHPExcel_Reader_Abstract implements P
             if (isset($worksheet_ss['Name'])) {
                 $tmpInfo['worksheetName'] = (string) $worksheet_ss['Name'];
             } else {
-                $tmpInfo['worksheetName'] = "Worksheet_{$worksheetID}";
+                $tmpInfo['worksheetName'] = "Worksheet_[$worksheetID]";
             }
 
             if (isset($worksheet->Table->Row)) {
